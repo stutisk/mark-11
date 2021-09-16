@@ -3,7 +3,7 @@ const birthDay=document.querySelector("#date-of-birth");
 const luckyNum=document.querySelector("#lucky-number");
 const btncheck=document.querySelector("#check-number");
 const output = document.querySelector("#output-container");
-
+const noteIce=document.querySelector(".note-container");
 
 function checknumberislucky(){
     const dob = birthDay.value;
@@ -37,6 +37,9 @@ function compareValues(sum,luckyNum){
     }
     }
 
+ function hideOnClick(){
+     noteIce.style.display = "none";
+    }
     
-btncheck.addEventListener("click",checknumberislucky)
-
+btncheck.addEventListener("click",checknumberislucky);
+noteIce.addEventListener("click",hideOnClick);

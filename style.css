@@ -26,12 +26,19 @@ p{
 }
 .note-container{
     border-style:solid;
-    width:30%;
+    width:50%;
     background-color: aquamarine;
-    margin: auto;
+    margin-bottom: 1rem;
     padding: 0 1rem;
+    height: 10%;
 }
 
+.close{
+    text-align:right;
+    color: black;
+    padding-left: 5rem;
+    text-decoration: none;
+}
 #output-container{
     color: rgb(228, 228, 240);
     font-size: larger;

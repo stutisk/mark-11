@@ -9,6 +9,10 @@ function checknumberislucky(){
     const dob = birthDay.value;
     const sum = calculateSum(dob);
     console.log(sum);
+    if (Number(luckyNum.value) < 0) {
+		output.innerText = " Please enter a positive number ";
+		return 0;
+	}
     if(sum&&dob)
     compareValues(sum,luckyNum.value)
     else{
@@ -17,6 +21,7 @@ function checknumberislucky(){
 
 
 }
+
 
 function calculateSum(dob){
     dob = dob.replaceAll("-","");
